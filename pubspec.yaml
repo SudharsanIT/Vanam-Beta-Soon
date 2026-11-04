@@ -1,0 +1,62 @@
+name: vanam
+description: "The Ultimate Forest Survival & Eco-App - 100% Offline Ready"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+
+  # Backend & Realtime Sync (Firebase)
+  firebase_core: ^2.27.0
+  firebase_database: ^10.4.0
+
+  # AWS Backend & Offline Sync (Added for AWS)
+  amplify_flutter: ^2.0.0
+  amplify_auth_cognito: ^2.0.0
+  amplify_api: ^2.0.0
+  amplify_datastore: ^2.0.0
+
+  # Secure Local Storage & Encryption
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  flutter_secure_storage: ^9.0.0
+
+  # GPS & Location Tracking
+  geolocator: ^10.1.0
+  geocoding: ^3.0.0
+
+  # Offline Maps
+  flutter_map: ^6.1.0
+  latlong2: ^0.9.0
+
+  # Weather Data
+  http: ^1.2.1
+
+  # AI Camera & Vision
+  camera: ^0.10.5+9
+
+  # Eco-Market Direct Call/WhatsApp
+  url_launcher: ^6.2.4
+
+  # Device ID & Hardware Utilities
+  uuid: ^4.3.1
+  device_info_plus: ^12.4.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Assets declaration for offline AI model and logos
+  assets:
+    - assets/models/
+    - assets/images/
